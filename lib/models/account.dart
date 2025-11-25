@@ -16,10 +16,10 @@ class Account {
   // um construtor a partir do original que consegue inicializar para transformar em um Map
   factory Account.fromMap(Map<String, dynamic> map) {
     return Account(
-      id: map["id"],
-      name: map["name"],
-      lastName: map["lastName"],
-      balance: map["balance"],
+      id: map["id"] as String,
+      name: map["name"]as String,
+      lastName: map["lastName"]as String,
+      balance: map["balance"]as double,
     );
   }
 
